@@ -3,32 +3,59 @@ const fs = require("fs");
 
 // array of questions for user
 const prompt = require("inquirer")
-const generateMarkdown = require("./utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown");
+const { stringify } = require("querystring");
+const { resolve } = require("path");
 
 const questions = [
     {
-        message: "What is the title??",
+        message: "What is the name of the project title?",
         name: "title"
     },
     {
-        message: "What is the file name?",
-        name: "name"
+        message: "Give a brief description of the project.",
+        name: "description"
+    },
+    {
+        message: "Give a brief description on how to install the program or app.",
+        name: "install"
+    },
+    {
+        message: "Give a breif description on how to use the app or program.",
+        name: "usage"
+    },
+    {
+        message: "Enter contribution guidlines.",
+        name: "contributions"
+    },
+    {
+        message: "Add test instructions (if applicable).",
+        name: "test"
+    },
+    {
+        type: 'list', name: 'license', message:'What Kind of License Do You Want To Add?', choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+    },
+    {
+        message: "What is your GitHub username?",
+        name: "github"
+    },
+    {
+        message: "Enter GitHub profile URL",
+        name: "url"
     },
     {
         message: "What is your email?",
         name: "email"
-    },
-    {
-        message: "What is the name of the file",
-        name: "fileName"
     }
 ];
 
 
 
 
+
+
 // function to write README file
-async function writeToFile(fileName, data) {
+function writeToFile(fileName, data) {
     // console.log(data);
     fs.writeFile(fileName, data, (err) => {
         if (err) throw err;
@@ -39,14 +66,16 @@ async function writeToFile(fileName, data) {
 // function to initialize program
 async function init() {
     const answers = await inquirer.prompt(questions);
-    console.log(answers.name);
-
-    generateMarkdown(answers)
-    
+    console.log(answers);
 
 
-    writeToFile(answers.name + ".json", answers)
-}
+  let markDown = generateMarkdown(answers);
+  console.log(markDown);
+
+await fs.writeToFile(answers.name + "README.md", markDown);
+
+};
+
 
 // function call to initialize program
 init();
