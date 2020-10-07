@@ -4,7 +4,7 @@
 
 
 
-![Screenshot One](Develop\assets\README_Generator_Code_Screenshot.jpg)
+![Screenshot One](assets\README_Generator_Code_Screenshot.jpg)
 
 ## Description
 This is a README file and template generator. This program accepts user input and creates a README.md file complete with license badge and description. The project uses Node.js as well as inquirer npm package. This README was generated using this program. 
