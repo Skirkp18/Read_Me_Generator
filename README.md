@@ -2,8 +2,12 @@
 
 ![GitHub](https://img.shields.io/github/downloads/Skirkp18/Read_Me_Generator/total) ![GitHub](https://img.shields.io/github/languages/top/Skirkp18/Read_Me_Generator) ![GitHub](https://img.shields.io/badge/license-MIT-green?style=flat) 
 
+
+
+![Screenshot One](Develop\assets\README_Generator_Code_Screenshot.jpg)
+
 ## Description
-This is a README file and template generator. This program accepts user input and creates a README.md file complete with license badge and description. The project uses Node.js as well as inquierer npm package. 
+This is a README file and template generator. This program accepts user input and creates a README.md file complete with license badge and description. The project uses Node.js as well as inquirer npm package. This README was generated using this program. 
 ## Table of Contents 
   - [Installation](#installation)
   - [Usage](#usage)
@@ -17,13 +21,13 @@ To install necessary dependencies, run the following command:
 npm i or npm install
 ```
 ## Usage
-Open a terminal at the "index.js" file. Enter command "node index.js" and enter question information. Choose the license used. And the program generates a file with the project title followed by "README.md" ("Your_Project_Here_README.md").
+Open a terminal at the "index.js" file. Make sure to insatll all necessary npm packages using the installation command in the above "Installation" section. Enter command "node index.js" and enter question information. Choose the license used. And the program generates a file with the project title followed by "_README.md" ("Your_Project_Here_README.md"). Check the example photo of a test project in the assets folder.
 ## Contributing
 I am the sole contributor currently.
 ## Tests
 To run tests, run the following command:
 ```
-npm test index.js
+N/A
 ```
 ## Questions
 If you have any questions about the repo, open an issue or contact me directly at Skirkp18@gmail.com. You can find more of my work on [GitHub](https://github.com/Skirkp18).
