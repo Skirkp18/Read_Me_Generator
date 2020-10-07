@@ -63,16 +63,14 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 async function init() {
+    // get user input to questions from array
     const answers = await inquirer.prompt(questions);
-    // console.log(answers);
+    // remove spaces from filename
     let fileName = answers.title.split(' ').join('');
-    console.log(fileName);
-
-  let markDown = generateMarkdown(answers);
-//   console.log(markDown);
-
-    writeToFile(fileName + "_README.md", markDown);
-
+    // define markdown var
+    let markDown = generateMarkdown(answers);
+    // create file function with args
+    writeToFile(fileName + "_README.md", markDown)
 };
 
 
