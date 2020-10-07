@@ -65,12 +65,13 @@ function writeToFile(fileName, data) {
 async function init() {
     const answers = await inquirer.prompt(questions);
     // console.log(answers);
-
+    let fileName = answers.title.split(' ').join('');
+    console.log(fileName);
 
   let markDown = generateMarkdown(answers);
 //   console.log(markDown);
 
-    writeToFile(answers.title + "README.md", markDown);
+    writeToFile(fileName + "_README.md", markDown);
 
 };
 
