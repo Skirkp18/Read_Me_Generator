@@ -5,15 +5,12 @@
 ## Description
 This is a README file and template generator. This program accepts user input and creates a README.md file complete with license badge and description. The project uses Node.js as well as inquierer npm package
 ## Table of Contents 
-- [Read Me Generator](#read-me-generator)
-  - [Description](#description)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  - [License](#license)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+* [License](#license)
 ## Installation
 To install necessary dependencies, run the following command:
 ``` 

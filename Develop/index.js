@@ -13,6 +13,10 @@ const questions = [
         name: "title"
     },
     {
+        message: "What is the name of the GitHub repo?",
+        name: "repo"
+    },
+    {
         message: "Give a brief description of the project.",
         name: "description"
     },
@@ -38,10 +42,6 @@ const questions = [
     {
         message: "What is your GitHub username?",
         name: "github"
-    },
-    {
-        message: "Enter GitHub repo URL",
-        name: "url"
     },
     {
         message: "What is your email?",
