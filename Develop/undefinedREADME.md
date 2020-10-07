@@ -12,12 +12,12 @@ Test
 ## Installation
 To install necessary dependencies, run the following command:
 ``` 
-Test
+TEst
 ```
 ## Usage
-Test
+TEst
 ## Tests
-Test
+TEst
 To run tests, run the following command:
 ```
 ```

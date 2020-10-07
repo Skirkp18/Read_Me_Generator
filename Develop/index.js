@@ -33,14 +33,14 @@ const questions = [
         name: "test"
     },
     {
-        type: 'list', name: 'license', message:'What Kind of License Do You Want To Add?', choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+        type: 'list', name: 'license', message:'What Kind of License Do You Want To Use?', choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
     },
     {
         message: "What is your GitHub username?",
         name: "github"
     },
     {
-        message: "Enter GitHub profile URL",
+        message: "Enter GitHub repo URL",
         name: "url"
     },
     {
@@ -72,7 +72,7 @@ async function init() {
   let markDown = generateMarkdown(answers);
   console.log(markDown);
 
-await fs.writeToFile(answers.name + "README.md", markDown);
+    writeToFile(answers.title + "README.md", markDown);
 
 };
 
