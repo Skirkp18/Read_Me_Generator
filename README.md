@@ -23,7 +23,7 @@ I am the sole contributor currently.
 ## Tests
 To run tests, run the following command:
 ```
-npm test indes.js
+npm test index.js
 ```
 ## Questions
 If you have any questions about the repo, open an issue or contact me directly at Skirkp18@gmail.com. You can find more of my work on [GitHub](https://github.com/Skirkp18).
