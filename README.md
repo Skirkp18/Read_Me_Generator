@@ -3,14 +3,14 @@
 ![GitHub](https://img.shields.io/github/downloads/Skirkp18/Read_Me_Generator/total) ![GitHub](https://img.shields.io/github/languages/top/Skirkp18/Read_Me_Generator) ![GitHub](https://img.shields.io/badge/license-MIT-green?style=flat) 
 
 ## Description
-This is a README file and template generator. This program accepts user input and creates a README.md file complete with license badge and description. The project uses Node.js as well as inquierer npm package.
+This is a README file and template generator. This program accepts user input and creates a README.md file complete with license badge and description. The project uses Node.js as well as inquierer npm package. 
 ## Table of Contents 
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-* [License](#license)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  - [License](#license)
 ## Installation
 To install necessary dependencies, run the following command:
 ``` 
@@ -23,7 +23,7 @@ I am the sole contributor currently.
 ## Tests
 To run tests, run the following command:
 ```
-npm test indes.js
+npm test index.js
 ```
 ## Questions
 If you have any questions about the repo, open an issue or contact me directly at Skirkp18@gmail.com. You can find more of my work on [GitHub](https://github.com/Skirkp18).
